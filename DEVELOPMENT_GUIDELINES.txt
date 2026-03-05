@@ -1,0 +1,114 @@
+# 10cent Website Development Guidelines
+# ======================================
+
+## Development Workflow
+
+Follow these steps for each section:
+
+1. **ANALYZE** - When user says "Now design this section", carefully analyze the provided design image.
+
+2. **GATHER REQUIREMENTS** - Ask user for any required assets:
+   - Images (product photos, illustrations, backgrounds)
+   - Logos (brand logo, favicon)
+   - Brand colors (hex codes)
+   - Fonts (if specific fonts are required)
+   - Icons (if specific icons are needed)
+
+3. **DEVELOP** - Build the section in Node.js, replicating the design as closely as possible.
+
+
+## Project Structure
+
+d:\10cent website\
+├── server.js            # Express.js server (port 3000)
+├── package.json         # Project config
+├── Images/              # All images, logos, assets
+└── public/
+    ├── index.html       # Main HTML file
+    ├── css/
+    │   └── styles.css   # Main stylesheet
+    └── js/
+        └── main.js      # JavaScript
+
+
+## Tech Stack
+
+- Node.js with Express.js
+- Vanilla HTML, CSS, JavaScript
+- No frameworks (unless requested)
+
+
+## Design Rules (Established)
+
+### Header Section
+- Logo on left side
+- "JOIN THE CLUB" button on right side
+  - Black background (#000000)
+  - White text (#FFFFFF)
+  - Font size: 13px
+  - Font weight: 400
+  - Text alignment: left
+  - No hover effects
+- Fixed header at top
+- Responsive for mobile/tablet
+
+### Hero Section
+- Layout: 3-column grid (left image, center text, right images)
+- Left image: Person by stream
+- Center text: "30 nights a year." + tagline
+- Right images: 2 stacked images (cottage, person in forest)
+- Bottom: 10% logo + "CLUB" text + "THE ART OF RETURN"
+- Images via URLs (external hosting)
+- Font weight: 400
+- Responsive layout (stacks on mobile)
+
+### The Great Disconnect Section
+- Layout: Split screen (50/50)
+- Left side: Full-bleed nature/waterfall image with centered overlay text
+  - Title: "THE GREAT DISCONNECT" (80px, white, uppercase)
+  - Subtitle: "We are a species in exile." (18px, white)
+- Right side: Content panel with beige background (#F5F5F0)
+  - Top quote about success
+  - "THE URBAN TRAP" section with statistics
+  - Middle text about urban professionals
+  - Bottom statement about anxiety
+- Bottom: Two quote boxes side-by-side
+  - "THE QUIET PANIC" and "THE REALITY"
+  - Light beige background (#F9F9F7)
+  - Italic quote text
+- Responsive: Stacks vertically on tablet/mobile
+- Full viewport height on desktop
+
+### Under The Trees Section
+- Placement: After "This is not for" section
+- Background: Full-bleed forest image
+- Text overlays:
+  - "WE HAVE HELD A SEAT"
+  - "UNDER THE TREES FOR YOU."
+  - Supporting line at bottom-left (small text)
+- Hover state:
+  - Dark overlay over the full section
+  - Semi-transparent focus rectangle in the center area
+- Responsive behavior:
+  - Preserve text hierarchy and relative positioning on tablet/mobile
+
+
+## Brand Colors (Update as provided)
+
+- Background: #FFFFFF (white)
+- Text: #000000 (black)
+- Button: Black background, white text
+- Disconnect section right panel: #F5F5F0 (beige)
+- Quote boxes: #F9F9F7 (light beige)
+
+
+## Running the Project
+
+npm start
+# Opens at http://localhost:3000
+
+
+## Notes
+
+- This file should be updated as new sections are developed
+- Reference this file at the start of new chat sessions to maintain context
