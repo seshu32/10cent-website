@@ -3122,6 +3122,27 @@ Responsive Styles
     text-transform: uppercase;
 }
 
+.next-conversation-text {
+    max-width: 760px;
+}
+
+.next-conversation-message {
+    font-family: var(--font-primary);
+    font-size: 22px;
+    line-height: 1.15;
+    color: #111;
+    letter-spacing: 0.2px;
+}
+
+.next-conversation-status {
+    font-size: 18px;
+    line-height: 1;
+    color: #9e3430;
+    letter-spacing: 0.3px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
 .next-conversation-date {
     font-size: 20px;
     line-height: 0.95;
@@ -3163,6 +3184,8 @@ Responsive Styles
     }
 
     .next-conversation-label,
+    .next-conversation-message,
+    .next-conversation-status,
     .next-conversation-date,
     .next-conversation-button {
         font-size: 19px;
@@ -3197,8 +3220,11 @@ Responsive Styles
     }
 
     .next-conversation-label,
+    .next-conversation-message,
+    .next-conversation-status,
     .next-conversation-date {
         font-size: 15px;
+        line-height: 1.2;
     }
 
     .next-conversation-button {
