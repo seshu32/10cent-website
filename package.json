@@ -4,7 +4,7 @@
   "private": true,
   "main": "server.js",
   "scripts": {
-    "build": "npm run check",
+    "build": "echo \"No build step required\"",
     "check": "node --check server.js && node --check public/js/main.js",
     "start": "node server.js",
     "test": "npm run check"
